@@ -53,14 +53,14 @@ public class Treino {
 	
 	private void adivinha(){
 		Scanner sc = new Scanner(System.in);
-		int numrand = (new Random()).nextInt(100);
-		
+		int numrand = (new Random()).nextInt(100)+1;
+
 		System.out.println("O numero secreto entre 0 e 100 foi gerado, tem 5 tentativas para o adivinhar !!");
-		
+
 		for(int i=0; i<5; i++){
 			System.out.println((i + 1) + "ª tentativa: ");
 			int numuser = sc.nextInt();
-			
+
 			if (numuser == numrand){
 				System.out.println("Parabéns !! adivinhou o numero");
 				break;
